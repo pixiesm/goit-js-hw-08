@@ -10,17 +10,16 @@ a {
   text-decoration: none;
 }
 
-img {
-  display: block;
-}
 .gallery-container {
   max-width: 1128px;
+  margin: 0 auto;
 }
 .gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
+  margin: 0 auto;
 }
 .gallery-image {
   width: 360px;
@@ -28,4 +27,7 @@ img {
   display: block;
   column-gap: 24px;
   row-gap: 24px;
+}
+.gallery-image:hover {
+  scale: 1.04;
 }

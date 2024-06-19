@@ -95,5 +95,9 @@ imgLinkEl.forEach(function (link) { link.addEventListener('click', (e) => { e.pr
 galleryList.addEventListener('click', (e) => {
     if (e.target === e.currentTarget) return;
     const imSrc = e.target.dataset.source;
-    console.log(imSrc);
- })
+    const instance = basicLightbox.create(`
+    <img src="${imSrc}" width="1112" height="640">
+`)
+
+instance.show()
+})
